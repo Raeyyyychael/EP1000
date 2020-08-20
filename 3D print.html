@@ -1,0 +1,68 @@
+<html>
+    
+ <head>
+     <title>3D Print</title>
+ <link rel="stylesheet" type="text/css" href="stylesheet.css">
+ </head>
+
+  <body>
+   <div id="container">
+       <div id="header">
+           <h1>3D Printing</h1>
+       </div>
+       <div id="nav">
+           <h3>Navigation</h3>
+           <ul>
+                <li><a class="Home" href="index.html">Introduction</a></li>
+                <li><a href="Fablab%20safety%20and%20tools.html">Fablab Safety and Tools</a></li>
+                <li><a href="Project%20management.html">Web Development</a></li>
+                <li><a href="CAD.html">Computer Aided Design</a></li>
+                <li><a href="3D%20print.html">3D Printing and Scanning</a></li>
+                <li><a href="CCC.html">Computer Controlled Cutting</a></li>
+                <li><a href="Embed%20Prog.html">Embedded Programming w/Arduino</a></li>
+                <li><a href="final%20project.html">Final Project</a></li>      
+           </ul>
+       </div>
+       <div id="main">
+          <h2>3D Printing Process</h2>
+           <a href="https://github.com/skeatz/DigitalFab-PrototypingFundamentals/blob/master/files/05%203D%20Printed%20Tool.pdf">3D Printing Tutorial</a>
+           <p>There are 3 main steps for 3D printing.</p>
+           <ol>
+           <li>CAD 3D Model (STL)</li>
+           <li>Slicer for 3D print (.gcode)</li>
+           <li>3D Print</li>
+           </ol>
+           
+           <p>The CAD model  can be done using Fusion360. Once designed, save the file as a STL (Standard Tessellation Language)file which is used for representation of 3D objects<br>
+               The Slicer software that I am using is Cura. The slicer software slices the 3D model into layers for printing and allows us to configure how we would be able to print the object.</p>
+           
+           <h2>Creating a 3D model using Extrusion</h2>
+           <p>Following the tutorial "Introduction to 3D Printing", I perpared a 3D drawing of a hollow cube using mainly the <b>extrustion function</b> on Fusion360.</p>
+           <img alt="hollowcube1" src="Images/hollowcube1.png" height="400">
+           <img alt="hc2" src="Images/hollowcube2.png" height="400">
+           <img alt="hc3" src="Images/hollowcube3.png" height="400">
+           
+           <h2>Using Slicer software (Ultimaker)</h2>
+           
+           <p>Once the 3D model is completed, ensure that the file is converted into STL. The general workflow of the printing process is</p>
+           <ol>
+               <li>Load the STL file</li>
+               <li>Set the parameter (layer height; wall thickness; fill density; speed of print; supports;bad adhesion)</li>
+               <li>Slice the object using the set parameters and generate the 3D printer code</li>
+               <li>Save the code on a thumbdrive and use it to print the object</li>
+           </ol>
+           
+           <p>Using the Hollow Cube Model I drew, I ran it through the slicer software. THe cube was 20mm by 20mm, requirred support for the top part as the angle was too steep as a suspension. Overall it took 3g of PLA and about 1 hour to print.</p>
+           <img alt="cura1" src="Images/cura1.png" height="400">
+           <img alt="c2" src="Images/cura2.png" height="400">
+           
+           <h2>Group Assignment</h2>
+           <a href="group%20project.html">Link to Group Assignment</a>
+       </div>
+     </div>
+     
+     <div id="footer">
+         Copyright &copy; Rachael Cheng
+     </div>
+ </body>
+</html>
